@@ -1,0 +1,12 @@
+mix of market row and fixed market - a number of 'rows' containing piles of fixed market cards; your bot can only buy from 1 row at a time
+choose cards, then shuffle them all up and deal out 'scrap' piles
+actions for marketbot:
+-Move up
+-buy x (recover x cards from scrap pile - higher isn't always better)
+-trash
+--Maybe trashing is also how you get gold ('fuel')? incentive to buy cards you don't need cause you'll need to burn them for literal gas
+--trashing adds to your score pile. some cards are worth -vp when trashed but have high fuel values
+
+gloomhaven style initiative
+gloomhaven/space alert style split cards
+card type: dynamic. modal cards that you decide what they do during resolution instad of during programming
