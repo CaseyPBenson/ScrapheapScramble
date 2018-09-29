@@ -17,6 +17,7 @@ Each Round is divided into two Phases: the Programming Phase, and the Resolution
 ## 4.1 Programming Phase
 **4.1.1 Upkeep**
 The Programming Phase begins with each Player drawing 6 Cards from their Deck.
+If a Player ever needs to draw Cards but is unable to, they must take their Discard, shuffle it, and replace their Deck with their Discard.
 **4.1.2 Registers**
 Each Player has six Registers, with which they will slot their Cards.
 Each Player simultaneously chooses which Cards to slot into their Registers.
