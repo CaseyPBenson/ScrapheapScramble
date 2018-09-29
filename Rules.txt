@@ -39,6 +39,7 @@ Each Card has an affect that allows the Player to manipulate their Scrapbot, Dec
 Keywords are always indicated with **bold text**.
 **4.2.1.1 Move X**
 The Player must move their Scrapbot exactly X spaces forward.
+Scrapbots move in the spaces between Junk Piles. A 'space' counts as the empty space between Junk Piles and the intersections at the corners of Junk Piles. I.e., each Junk Pile has 8 spaces around it that may be shared with other Junk Piles.
 If a Scrapbot would hit another Scrapbot, the Moving Scrapbot pushes the other for the remainder of the Move.
 **4.2.1.2 Turn**
 The Player must rotate their Scrapbot left or right.
