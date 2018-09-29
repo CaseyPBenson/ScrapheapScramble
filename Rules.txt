@@ -1,11 +1,90 @@
 # 1.0 Introduction
-
 ## 1.1 Objective
+The objective of the game is to have the most valuable scrapping company by navigating your Scrapbots through a Junkyard and grabbing the most valuable scrap you can from piles of junk.
 
 # 2.0 Components
 
 # 3.0 Game Setup
+Take the Oversight Council Drone and Cyber-Limpet Card piles, as well as 9 other Cards piles as determined by the players, and shuffle them together.
+**3.1 Junk Piles & the Junkyard**
+Deal out cards from the mixed deck into 9 Junk Piles of 12 cards each, in a 3x3 grid, to form the Junkyard.
+Flip the top Card of each Junk Pile over.
+**3.2 Scrapbots**
+Starting with the Player who was most recently at a junkyard, landfill, or dump, each player takes their corresponding Scrapbot marker and places it along the outside edge of the Junkyard in any alignment they choose.
 
 # 4.0 Playing the Game
+Each Round is divided into two Phases: the Programming Phase, and the Resolution Phase.
+## 4.1 Programming Phase
+**4.1.1 Upkeep**
+The Programming Phase begins with each Player drawing 6 Cards from their Deck.
+**4.1.2 Registers**
+Each Player has six Registers, with which they will slot their Cards.
+Each Player simultaneously chooses which Cards to slot into their Registers.
+Each Player has only 3 Active Registers by default: Registers 0, 1, and 2. This amount can be modified by Charging.
+Players may slot Cards into each Register, regardless if it is Active or not.
+Registers will resolve in the Resolution Phase in numerical order: Register 0 resolves first, followed by Register 1, and so on.
+**4.1.3 Charging**
+A Player may Scrap exactly one Card from their Hand during their Programming Phase to Charge their Scrapbot.
+Each Card has a listed Charge value, indicating the number of additional Registers that will be Activated.
+Some cards may have a negative Charge value. If those cards are used to Charge, Deactivate that number of Registers instead of Activating them.
+You must Activate or Deactivate Registers in sequential order.
+**4.1.4 End of Phase**
+Once each Player has filled as many Registers as they so choose, continue to the Resolution Phase. 
+## 4.2 Resolution Phase
+TODO: How to determine resolution order. Maybe based off of Charged card?
+Unless otherwise stated, ALL text on a Card is mandatory.
+In the situation where a Card contradicts the following, the Card takes precedence.
+### 4.2.1 Keywords
+Each Card has an affect that allows the Player to manipulate their Scrapbot, Deck, Hand, Registers, Discard, or Scrapheap.
+Keywords are always indicated with **bold text**.
+**4.2.1.1 Move X**
+The Player must move their Scrapbot exactly X spaces forward.
+If a Scrapbot would hit another Scrapbot, the Moving Scrapbot pushes the other for the remainder of the Move.
+**4.2.1.2 Turn**
+The Player must rotate their Scrapbot left or right.
+**4.2.1.3 Salvage X**
+The Player must add the top X Cards from a Junk Pile adjacent to their Scrapbot to their Discard.
+Each Salvage action targets only one Junk Pile.
+**4.2.1.4 Scrap X**
+The Player must add X Cards to their Scrapheap from the indicated source.
+**4.2.1.5 Recharge X**
+The Player must activate X additional Registers on their turn. These Registers do not do anything by themselves; they still require Cards slotted to gain any affect.
+**4.2.1.6 Shuffle**
+A Player must shuffle a Junk Pile adjacent to their Scrapbot.
+**4.2.1.7 Overclock**
+When a Card with Overclock finishes resolving, the Scrapbot immediately begins resolving the Card in its next Register out of turn order.
+**4.2.2**
+At the end of the Resolution Phase, each Player puts all Cards in their Hand and all Registers into their respective Discards.
 
-# 5.0 Scoring and Victory
+# 5.0 Game End, Scoring and Victory
+The game ends at the end of the Round in which the 4th Junk Pile has been emptied. Players then tally up the total Value of their Scrapheap, as well as any other Cards that may have given them Value.
+The Player with the most Valuable Scrapheap wins. In the event of a tie, the tied Player with the fewest cards in their Scrapheap wins. If the Players are still tied, their companies merge and they enjoy a joint victory once all the paperwork has been filed.
+
+# Appendix 1: Nouns
+* Value
+* Player
+* Round
+* Scrapbot
+* Junkyard
+* Junk Pile
+* Card
+* Register
+* Programming Phase
+* Resolution Phase
+* Deck
+* Discard
+* Hand
+* Scrapheap
+
+# Appendix 2: Verbs
+* Scrap
+* Salvage
+* Shuffle
+* Move
+* Turn
+* Recharge
+* Charge
+* Activate
+* Deactivate
+* Overclock
+* Resolve
