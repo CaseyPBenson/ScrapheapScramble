@@ -5,10 +5,10 @@ The objective of the game is to have the most valuable scrapping company by navi
 # 2.0 Components
 
 # 3.0 Game Setup
-Take the Oversight Council Drone and Cyber-Limpet Card piles, as well as 9 other Cards piles as determined by the players, and shuffle them together.
+Take the Oversight Council Drone and Cyber-Limpet Card piles, as well as 9 other Card piles as determined by the players, and shuffle them together.
 **3.1 Junk Piles & the Junkyard**
 Deal out cards from the mixed deck into 9 Junk Piles of 12 cards each, in a 3x3 grid, to form the Junkyard.
-Flip the top Card of each Junk Pile over.
+Flip the top Card of each Junk Pile over. The top card of each Junk Pile will always be visible to all Players.
 **3.2 Scrapbots**
 Starting with the Player who was most recently at a junkyard, landfill, or dump, each player takes their corresponding Scrapbot marker and places it along the outside edge of the Junkyard in any alignment they choose.
 
