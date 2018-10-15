@@ -34,26 +34,26 @@ Once each Player has filled as many Registers as they so choose, continue to the
 ## 4.2 Resolution Phase
 TODO: How to determine resolution order. Maybe based off of Charged card?
 Unless otherwise stated, ALL text on a Card is mandatory.
-In the situation where a Card contradicts the following, the Card takes precedence.
+In the situation where a Card contradicts these rules, the Card takes precedence.
 ### 4.2.1 Keywords
 Each Card has an affect that allows the Player to manipulate their Scrapbot, Deck, Hand, Registers, Discard, or Scrapheap.
 Keywords are always indicated with **bold text**.
-**4.2.1.1 Move X**
+**I. Move X**
 The Player must move their Scrapbot exactly X spaces forward.
 Scrapbots move in the spaces between Junk Piles. A 'space' counts as the empty space between Junk Piles and the intersections at the corners of Junk Piles. I.e., each Junk Pile has 8 spaces around it that may be shared with other Junk Piles.
 If a Scrapbot would hit another Scrapbot, the Moving Scrapbot pushes the other for the remainder of the Move.
-**4.2.1.2 Turn**
+**II. Turn**
 The Player must rotate their Scrapbot left or right.
-**4.2.1.3 Salvage X**
+**III. Salvage X**
 The Player must add the top X Cards from a Junk Pile adjacent to their Scrapbot to their Discard.
 Each Salvage action targets only one Junk Pile.
-**4.2.1.4 Scrap X**
+**IV. Scrap X**
 The Player must add X Cards to their Scrapheap from the indicated source.
-**4.2.1.5 Recharge X**
+**V. Recharge X**
 The Player must activate X additional Registers on their turn. These Registers do not do anything by themselves; they still require Cards slotted to gain any affect.
-**4.2.1.6 Shuffle**
+**VI. Shuffle**
 A Player must shuffle a Junk Pile adjacent to their Scrapbot.
-**4.2.1.7 Overclock**
+**VII. Overclock**
 When a Card with Overclock finishes resolving, the Scrapbot immediately begins resolving the Card in its next Register out of turn order.
 **4.2.2**
 At the end of the Resolution Phase, each Player puts all Cards in their Hand and all Registers into their respective Discards.
