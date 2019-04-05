@@ -1,0 +1,31 @@
+Name,Type,Effect,Charge,VP,Flavor,Count,Notes
+Move,Operation,Move 1,,,,,Starter
+Salvage,Operation,Salvage 3,,,,,Starter
+Scrap,Operation,Scrap 1,,,,,Starter
+Battery,Scrap,,1,0,,,Starter
+Scoot & Scoop,Operation,"Move 1
+Salvage 2",,,,10,
+Serpentine,Operation,"Turn
+Turn
+Turn",,,,10,
+Superconducting Capacitor,Scrap,"When you scrap this, deactivate 2 registers.",-2,5,"Takes some juice to make sure it still works, but worth loads.",10,
+Depleted Fuel Rods,Scrap,,3,-1,"Still got some kick, but your investors won’t appreciate paying for extra decon.",10,
+Quantum Superprocessor,Scrap,"All cards in your registers have Overclock.
+Scrap this and all other cards in your registers at the end of this round.",2,-3,,10,
+Preordinateur 2.0 Analysis,Operation,"Look at the top 3 cards of an adjacent junk pile. Put them back in any order.
+Salvage 1",,,,10,
+Rare Earth Electromagnet,Hazard,"When you salvage this, Salvage 1 from the same junk pile.",1,0,It...won't...come...loose!,10,
+Catch Hit,Operation,"Move 3
+If you hit another Scrapbot, Recharge 1",,,,10,
+Dangerous Materiel Protocol,Operation,"Salvage 2
+If you salvaged a Hazard, Recharge 1",,,,,
+Precision Tongs,Operation,Salvage 1,,,When you gotta get exactly what you need and nothing more.,,
+Double Time,Operation,"Move 1
+Overclock",,,,,
+,Operation,"Scrap 3 from an adjacent junk pile, then Scrap this.",,-3,,,
+Malware Infection,Hazard,"Move 1
+If you hit another Scrapbot, put this in that Scrapbot's Scrapheap.",,-2,,,
+Swerve,Operation,"Move 2
+If you would hit another Scrapbot, Turn instead.",,,,,
+Oversight Council Drone,Hazard,,0,-3,"You made a ruckus, and now Big Brother's watching you.",,
+Cyber-Limpet,Hazard,"When you scrap this, deactivate 2 registers.",-2,0,"Ugh, power parasites. Juicing the system'll fry 'em dead. Try to ignore the smell.",,
