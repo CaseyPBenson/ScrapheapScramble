@@ -7,8 +7,8 @@ The objective of the game is to have the most valuable scrapping company by navi
 # 3.0 Game Setup
 Take 12 card piles from the box as determined by the players, and shuffle them together.
 **3.1 Junk Piles & the Junkyard**
-Deal out cards from the mixed deck into 9 Junk Piles of 12 cards each, in a 3x3 grid, to form the Junkyard.
-Flip the top card of each Junk Pile over. The top card of each Junk Pile will always be visible to all players.
+Deal out cards from the mixed deck into 9 junk piles of 12 cards each, in a 3x3 grid, to form the Junkyard.
+Flip the top card of each junk pile over. The top card of each junk pile will always be visible to all players.
 **3.2 Scrapbots**
 Scrapbots are the player avatars, and exist in the spaces between the junk piles.
 Each Scrapbot has a position on the board, and a current heading along the cardinal directions.
@@ -43,7 +43,7 @@ Each card has an affect that allows the player to manipulate their Scrapbot, dec
 Keywords are always indicated with **bold text** and Proper Casing.
 **I. Move X**
 The player must move their Scrapbot exactly X spaces forward in their current heading.
-Scrapbots move in the spaces between Junk Piles. A 'space' counts as the empty space orthogonally between junk piles, i.e., each Junk Pile has four valid spaces around, some of which may be shared with other junk piles.
+Scrapbots move in the spaces between junk piles. A 'space' counts as the empty space orthogonally between junk piles, i.e., each junk pile has four valid spaces around, some of which may be shared with other junk piles.
 Where P is a junk pile, x is a valid space for a Scrapbot:
   x   x   x
 x P x P x P x
@@ -56,8 +56,8 @@ If a Scrapbot would ever hit another Scrapbot, the moving Scrapbot pushes the ot
 **II. Turn**
 The player must move their Scrapbot into one of the adjacent spaces to its left or right.
 **III. Salvage X**
-The player must add the top X cards from a Junk Pile adjacent to their Scrapbot to their Discard.
-Each Salvage action targets only one Junk Pile.
+The player must add the top X cards from a junk pile adjacent to their Scrapbot to their discard pile.
+Each Salvage action targets only one junk pile.
 **IV. Scrap X**
 The player must add X cards to their Scrapheap from their hand.
 **V. Recharge X**
@@ -70,7 +70,7 @@ When a card with Overclock finishes resolving, the Scrapbot immediately begins r
 At the end of the Resolution Phase, each player puts all cards in their Hand and all registers into their respective discards.
 
 # 5.0 Game End, Scoring and Victory
-The game ends at the end of the round in which the 4th Junk Pile has been emptied. players then tally up the total value of their Scrapheap, as well as any other cards that may have given them value.
+The game ends at the end of the round in which the 4th junk pile has been emptied. players then tally up the total value of their Scrapheap, as well as any other cards that may have given them value.
 The player with the most valuable Scrapheap wins. In the event of a tie, the tied player with the fewest cards in their Scrapheap wins. If the players are still tied, their companies merge and they enjoy a joint victory once all the appropriate paperwork has been filed.
 
 # Appendix 1: Nouns
@@ -79,7 +79,7 @@ The player with the most valuable Scrapheap wins. In the event of a tie, the tie
 * round
 * Scrapbot
 * Junkyard
-* Junk Pile
+* junk pile
 * Card
 * register
 * Programming Phase
