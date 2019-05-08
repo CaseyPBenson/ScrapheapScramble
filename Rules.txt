@@ -4,16 +4,64 @@ The objective of the game is to have the most valuable scrapping company by navi
 
 # 2.0 Components
 
-# 3.0 Game Setup
-Take 12 card piles from the box as determined by the players, and shuffle them together.
-**3.1 Junk Piles & the Junkyard**
-Deal out cards from the mixed deck into 9 junk piles of 12 cards each, in a 3x3 grid, to form the Junkyard.
-Flip the top card of each junk pile over. The top card of each junk pile will always be visible to all players.
-**3.2 Scrapbots**
-Scrapbots are the player avatars, and exist in the spaces between the junk piles.
+# 3.0 Important Terminology & Concepts
+**3.1 Scrapbots**
+Scrapbots are the players' avatars. They are controlled each round by slotting cards into their registers.
 Each Scrapbot has a position on the board, and a current heading along the cardinal directions.
-Each space can only hold one Scrapbot at a time.
-Starting with the player who was most recently took out the trash, each player takes their corresponding Scrapbot marker and places it along the outside edge of the Junkyard with any heading they choose.
+**3.2 The Junkyard**
+The Junkyard is the play space. It is composed of 9 junk pile decks of 12 cards each, in a 3x3 grid.
+The Junkyard also has spaces for scrapbots along the four cardinal directions of each junk pile. Each space can hold only one scrapbot.
+Fig. A: where P is a junk pile, x is a valid space for a Scrapbot:
+```
+  x   x   x
+x P x P x P x
+  x   x   x
+x P x P x P x
+  x   x   x
+x P x P x P x
+  x   x   x
+```
+**3.3 Register Board**
+
+**3.4 Cards**
+Each card has a name, art, an initiative value, a charge value, a scrap value, and an effects box.
+**3.4.1 Initiative Value**
+The initiative value determines the turn order for each register. Higher numbers beat lower numbers. 
+In the case of a tie, TODO: Determine tiebreaker criteria. Ties shouldn't be possible in the base game but should consider expandability.
+**3.4.2 Charge Value**
+The charge value determines how many additional registers will be activated if this card is trashed during the Programming Phase or by resolving a card with the **Charge** action.
+This value may be negative. In that case, the number indicates how many registers will be deactivated, instead.
+**3.4.3 Scrap Value**
+The scrap value determines how many points the card is worth when the card is in your Scrapheap, generally as a result of the **Scrap** action.
+**3.4.4 Effects Box**
+The effects box indicates what a card does when it's resolved during the Resolution Phase. Generally, a card's effects box will contain one or more keyword actions, indicated with **Proper Case Bold Text**.
+**3.5 Keywords**
+**3.5.1 Move X**
+The player must move their Scrapbot exactly X spaces forward in their current heading.
+If a Scrapbot would ever hit another Scrapbot, the active Scrapbot pushes the other one space in the active scrapbot's heading, if possible.
+**3.5.2 Turn**
+The player must move their scrapbot into one of the adjacent spaces to its left or right.
+**3.5.3 Salvage X**
+The player must add the top X cards from a junk pile adjacent to their Scrapbot to their discard pile.
+Each Salvage action targets only one junk pile.
+**3.5.4 Scrap X**
+The player must add X cards to their Scrapheap from their hand.
+**3.5.5 Trash**
+The player must remove a card from their hand from the game. Unlike scrapping, trashing a card does NOT result in any points.
+**3.5.5 Recharge X**
+The player must activate X additional registers on their turn. These registers do not do anything by themselves; they still require cards slotted to gain any effect.
+**3.5.6 Shuffle**
+A player must shuffle a junk pile adjacent to their Scrapbot.
+**3.5.7 Overclock**
+When a card with Overclock finishes resolving, the Scrapbot immediately begins resolving the card in its next register out of turn order. This effect may chain repeatedly if the next cards also have Overclock.
+
+# 4.0 Game Setup
+Take 12 card piles from the box as determined by the players, and shuffle them together.
+**4.1 Junk Piles & the Junkyard**
+Deal out cards from the mixed deck into 9 junk piles of 12 cards each, in a 3x3 grid, to form the Junkyard.
+Flip the top card of each junk pile over. The top card of each junk pile is always visible to all players.
+**4.2 Scrapbots**
+Starting with the player who most recently took out the trash, each player takes their corresponding Scrapbot marker and places it along the outside edge of the Junkyard with any heading they choose.
 
 # 4.0 Playing the Game
 Each round is divided into two phases: the Programming Phase, and the Resolution Phase.
@@ -23,51 +71,21 @@ The Programming Phase begins with each player drawing 6 cards from their deck.
 If a player ever needs to draw a card and is unable to, they must take their discard pile, shuffle it, and replace their deck with their discard pile.
 **4.1.2 Registers**
 Each player has six registers, with which they will slot their cards.
-Each player simultaneously chooses which cards to slot into rheir Registers.
-Each player has only 3 active registers by default: registers 0, 1, and 2. This amount can be modified by taking the charging action.
+Each player simultaneously chooses which cards to slot into their Registers face-down. They will be revealed during the Resolution Phase.
+Each player has only 3 active registers by default: registers 1, 2, and 3. Additional registers can be activated during the Programming Phase by trashing a card from your hand (See 4.1.3), and during the Resolution Phase by resolving cards with the **Charge** action.
 Players may slot cards into each register, regardless if it is active or not.
-Registers will resolve in the Resolution Phase in numerical order: register 0 resolves first, followed by register 1, and so on.
+Registers will resolve in the Resolution Phase in numerical order: register 1 resolves first, followed by register 2, and so on.
 **4.1.3 Charging**
-A player may Scrap exactly one card from their hand during their Programming Phase to charge their Scrapbot.
-Each card has a listed charge value, indicating the number of additional registers that will be activated this round.
-Some cards may have a negative charge value. If those cards are used to charge, deactivate that number of registers instead of activating them.
+A player may trash exactly one card from their hand during their Programming Phase to charge their Scrapbot, locking or unlocking additional registers for use this round according to the trashed card's charge value.
 **4.1.4 End of Phase**
 Once each player has filled as many registers as they so choose, continue to the Resolution Phase. 
 ## 4.2 Resolution Phase
-TODO: How to determine resolution order. Maybe based off of Charged card?
+For each register, each player will resolve the card in that register in descending initative order. Repeat this process until all slotted cards have been resolved.
 Unless otherwise stated, ALL text on a card is mandatory.
 Cards effects resolve in their listed order. If a Scrapbot cannot resolve an effect for whatever reason, ignore it and continue with the rest of the card's effects.
 In the situation where a card contradicts these rules, the card takes precedence.
-### 4.2.1 Keywords
-Each card has an affect that allows the player to manipulate their Scrapbot, deck, hand, registers, discard pile, or scrapheap.
-Keywords are always indicated with **bold text** and Proper Casing.
-**I. Move X**
-The player must move their Scrapbot exactly X spaces forward in their current heading.
-Scrapbots move in the spaces between junk piles. A 'space' counts as the empty space orthogonally between junk piles, i.e., each junk pile has four valid spaces around, some of which may be shared with other junk piles.
-Where P is a junk pile, x is a valid space for a Scrapbot:
-  x   x   x
-x P x P x P x
-  x   x   x
-x P x P x P x
-  x   x   x
-x P x P x P x
-  x   x   x
-If a Scrapbot would ever hit another Scrapbot, the moving Scrapbot pushes the other one space in the mover's heading, if possible.
-**II. Turn**
-The player must move their Scrapbot into one of the adjacent spaces to its left or right.
-**III. Salvage X**
-The player must add the top X cards from a junk pile adjacent to their Scrapbot to their discard pile.
-Each Salvage action targets only one junk pile.
-**IV. Scrap X**
-The player must add X cards to their Scrapheap from their hand.
-**V. Recharge X**
-The player must activate X additional registers on their turn. These registers do not do anything by themselves; they still require cards slotted to gain any affect.
-**VI. Shuffle**
-A player must shuffle a junk pile adjacent to their Scrapbot.
-**VII. Overclock**
-When a card with Overclock finishes resolving, the Scrapbot immediately begins resolving the Card in its next register out of turn order.
-**4.2.2**
-At the end of the Resolution Phase, each player puts all cards in their Hand and all registers into their respective discards.
+**4.2.1 End of Phase**
+Once all slotted cards have been resolved, each player puts all cards in their hand and registers into their respective discards. Then, a new round begins with a new Programming Phase.
 
 # 5.0 Game End, Scoring and Victory
 The game ends at the end of the round in which the 4th junk pile has been emptied. players then tally up the total value of their Scrapheap, as well as any other cards that may have given them value.
@@ -88,6 +106,9 @@ The player with the most valuable Scrapheap wins. In the event of a tie, the tie
 * Discard
 * Hand
 * Scrapheap
+* Charge Value
+* Scrap Value
+* Initiative Value
 
 # Appendix 2: Verbs
 * Scrap
@@ -101,3 +122,4 @@ The player with the most valuable Scrapheap wins. In the event of a tie, the tie
 * Deactivate
 * Overclock
 * Resolve
+* Trash
