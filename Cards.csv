@@ -1,31 +1,33 @@
-Name,Type,Effect,Charge,VP,Flavor,Count,Notes
+Name,Type,Effect,Charge,VP,Initiative,Count,Notes
 Move,Operation,Move 1,,,,,Starter
-Salvage,Operation,Salvage 3,,,,,Starter
+Salvage,Operation,Salvage 2,,,,,Starter
 Scrap,Operation,Scrap 1,,,,,Starter
 Battery,Scrap,,1,0,,,Starter
 Scoot & Scoop,Operation,"Move 1
-Salvage 2",,,,10,
+Salvage 2",,,,,
 Serpentine,Operation,"Turn
 Turn
-Turn",,,,10,
-Superconducting Capacitor,Scrap,"When you scrap this, deactivate 2 registers.",-2,5,"Takes some juice to make sure it still works, but worth loads.",10,
-Depleted Fuel Rods,Scrap,,3,-1,"Still got some kick, but your investors won’t appreciate paying for extra decon.",10,
+Turn",,,,,
+Superconducting Capacitor,Scrap,"When you scrap this, deactivate 2 registers.",-2,5,,,
+Depleted Fuel Rods,Scrap,,3,0,,,
 Quantum Superprocessor,Scrap,"All cards in your registers have Overclock.
-Scrap this and all other cards in your registers at the end of this round.",2,-3,,10,
+Trash this and all other cards in your registers at the end of this round.",2,0,,,
 Preordinateur 2.0 Analysis,Operation,"Look at the top 3 cards of an adjacent junk pile. Put them back in any order.
-Salvage 1",,,,10,
-Rare Earth Electromagnet,Hazard,"When you salvage this, Salvage 1 from the same junk pile.",1,0,It...won't...come...loose!,10,
+Salvage 1",,,,,
+Rare Earth Electromagnet,Hazard,"When you salvage this, Salvage 1 from the same junk pile.",1,0,,,
 Catch Hit,Operation,"Move 3
-If you hit another Scrapbot, Recharge 1",,,,10,
+If you hit another Scrapbot, Charge 1",,,,,
 Dangerous Materiel Protocol,Operation,"Salvage 2
-If you salvaged a Hazard, Recharge 1",,,,,
-Precision Tongs,Operation,Salvage 1,,,When you gotta get exactly what you need and nothing more.,,
+If you salvaged any Hazards, trash them and Charge 1",,,,,
+Precision Tongs,Operation,Salvage 1,,,,,
 Double Time,Operation,"Move 1
 Overclock",,,,,
-,Operation,"Scrap 3 from an adjacent junk pile, then Scrap this.",,-3,,,
-Malware Infection,Hazard,"Move 1
-If you hit another Scrapbot, put this in that Scrapbot's Scrapheap.",,-2,,,
+Super Spade 2k7,Operation,"Scrap 3 from an adjacent junk pile, then trash this.",,,,,
+Malware Infection,Hazard,When hit: Put this card in the discard pile of the player who hit you.,,0,,,
 Swerve,Operation,"Move 2
 If you would hit another Scrapbot, Turn instead.",,,,,
-Oversight Council Drone,Hazard,,0,-3,"You made a ruckus, and now Big Brother's watching you.",,
-Cyber-Limpet,Hazard,"When you scrap this, deactivate 2 registers.",-2,0,"Ugh, power parasites. Juicing the system'll fry 'em dead. Try to ignore the smell.",,
+Reclaimed Metal Tax,Hazard,"When drawn: Trash a card at random from your scrapheap, then trash this.",0,0,,,
+Cyber-Limpet,Hazard,"When drawn: Immediately slot this into your leftmost open register, then Draw 1.
+Trash this.",-2,0,,,
+Teleport Beacon,,"Note your Scrapbot’s current location. At the end of the round, you may return your Scrapbot to that location.",,,,,
+Portal Generator,Operation,"Move 2. If your Scrapbot would hit the edge of the Junkyard, instead it wraps around to the other side.",,,,,

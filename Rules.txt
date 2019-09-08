@@ -22,6 +22,10 @@ x P x P x P x
   x   x   x
 ```
 **3.3 Register Board**
+**3.3.1 Registers**
+**3.3.2 Deck**
+If a player ever needs to draw a card and is unable to, they must take their discard pile, shuffle it, and replace their deck with their discard pile.
+**3.3.3 Scrapheap**
 
 **3.4 Cards**
 Each card has a name, art, an initiative value, a charge value, a scrap value, and an effects box.
@@ -35,6 +39,7 @@ This value may be negative. In that case, the number indicates how many register
 The scrap value determines how many points the card is worth when the card is in your Scrapheap, generally as a result of the **Scrap** action.
 **3.4.4 Effects Box**
 The effects box indicates what a card does when it's resolved during the Resolution Phase. Generally, a card's effects box will contain one or more keyword actions, indicated with **Proper Case Bold Text**.
+Some cards will have a conditional statement in their effects box, such as "When drawn:", "When scrapped:", "When trashed:", etc. When the criteria on that card happens, the player must reveal it and immediately resolve the effect after the colon, even during the Programming Phase.	
 **3.5 Keywords**
 **3.5.1 Move X**
 The player must move their Scrapbot exactly X spaces forward in their current heading.
@@ -48,11 +53,13 @@ Each Salvage action targets only one junk pile.
 The player must add X cards to their Scrapheap from their hand.
 **3.5.5 Trash**
 The player must remove a card from their hand from the game. Unlike scrapping, trashing a card does NOT result in any points.
-**3.5.5 Recharge X**
+**3.5.6 Charge X**
 The player must activate X additional registers on their turn. These registers do not do anything by themselves; they still require cards slotted to gain any effect.
-**3.5.6 Shuffle**
+**3.5.7 Shuffle**
 A player must shuffle a junk pile adjacent to their Scrapbot.
-**3.5.7 Overclock**
+**3.5.8 Draw X**
+The player must draw X cards from their deck.
+**3.5.9 Overclock**
 When a card with Overclock finishes resolving, the Scrapbot immediately begins resolving the card in its next register out of turn order. This effect may chain repeatedly if the next cards also have Overclock.
 
 # 4.0 Game Setup
@@ -68,7 +75,6 @@ Each round is divided into two phases: the Programming Phase, and the Resolution
 ## 4.1 Programming Phase
 **4.1.1 Upkeep**
 The Programming Phase begins with each player drawing 6 cards from their deck.
-If a player ever needs to draw a card and is unable to, they must take their discard pile, shuffle it, and replace their deck with their discard pile.
 **4.1.2 Registers**
 Each player has six registers, with which they will slot their cards.
 Each player simultaneously chooses which cards to slot into their Registers face-down. They will be revealed during the Resolution Phase.
@@ -88,8 +94,8 @@ In the situation where a card contradicts these rules, the card takes precedence
 Once all slotted cards have been resolved, each player puts all cards in their hand and registers into their respective discards. Then, a new round begins with a new Programming Phase.
 
 # 5.0 Game End, Scoring and Victory
-The game ends at the end of the round in which the 4th junk pile has been emptied. players then tally up the total value of their Scrapheap, as well as any other cards that may have given them value.
-The player with the most valuable Scrapheap wins. In the event of a tie, the tied player with the fewest cards in their Scrapheap wins. If the players are still tied, their companies merge and they enjoy a joint victory once all the appropriate paperwork has been filed.
+The game ends at the end of the round in which the 4th junk pile has been emptied. Players then tally up the total value of their Scrapheap, as well as any other cards that may have given them value.
+The player with the highest value wins. In the event of a tie, the tied player with the fewest cards in their Scrapheap wins. If the players are still tied, their companies merge and they enjoy a joint victory once all the appropriate paperwork has been filed.
 
 # Appendix 1: Nouns
 * Value
@@ -123,3 +129,5 @@ The player with the most valuable Scrapheap wins. In the event of a tie, the tie
 * Overclock
 * Resolve
 * Trash
+* Slot
+* Draw
